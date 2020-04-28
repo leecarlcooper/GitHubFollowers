@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		94FD695D2457610A00F49F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD695C2457610A00F49F35 /* AppDelegate.swift */; };
 		94FD695F2457610A00F49F35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD695E2457610A00F49F35 /* SceneDelegate.swift */; };
-		94FD69612457610A00F49F35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD69602457610A00F49F35 /* ViewController.swift */; };
-		94FD69642457610A00F49F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FD69622457610A00F49F35 /* Main.storyboard */; };
 		94FD69662457610E00F49F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FD69652457610E00F49F35 /* Assets.xcassets */; };
 		94FD69692457610E00F49F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FD69672457610E00F49F35 /* LaunchScreen.storyboard */; };
+		94FD697124577CA500F49F35 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD697024577CA500F49F35 /* SearchVC.swift */; };
+		94FD697324577CD000F49F35 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD697224577CD000F49F35 /* FavoritesListVC.swift */; };
+		94FD697524579CE000F49F35 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD697424579CE000F49F35 /* GFButton.swift */; };
+		94FD69772457A2EC00F49F35 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD69762457A2EC00F49F35 /* GFTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94FD69592457610A00F49F35 /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FD695C2457610A00F49F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FD695E2457610A00F49F35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94FD69602457610A00F49F35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		94FD69632457610A00F49F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94FD69652457610E00F49F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94FD69682457610E00F49F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94FD696A2457610E00F49F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FD697024577CA500F49F35 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		94FD697224577CD000F49F35 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		94FD697424579CE000F49F35 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		94FD69762457A2EC00F49F35 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				94FD695C2457610A00F49F35 /* AppDelegate.swift */,
 				94FD695E2457610A00F49F35 /* SceneDelegate.swift */,
-				94FD69602457610A00F49F35 /* ViewController.swift */,
-				94FD69622457610A00F49F35 /* Main.storyboard */,
 				94FD69652457610E00F49F35 /* Assets.xcassets */,
 				94FD69672457610E00F49F35 /* LaunchScreen.storyboard */,
 				94FD696A2457610E00F49F35 /* Info.plist */,
+				94FD697024577CA500F49F35 /* SearchVC.swift */,
+				94FD697224577CD000F49F35 /* FavoritesListVC.swift */,
+				94FD697424579CE000F49F35 /* GFButton.swift */,
+				94FD69762457A2EC00F49F35 /* GFTextField.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -127,7 +133,6 @@
 			files = (
 				94FD69692457610E00F49F35 /* LaunchScreen.storyboard in Resources */,
 				94FD69662457610E00F49F35 /* Assets.xcassets in Resources */,
-				94FD69642457610A00F49F35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FD69612457610A00F49F35 /* ViewController.swift in Sources */,
+				94FD69772457A2EC00F49F35 /* GFTextField.swift in Sources */,
+				94FD697324577CD000F49F35 /* FavoritesListVC.swift in Sources */,
+				94FD697524579CE000F49F35 /* GFButton.swift in Sources */,
+				94FD697124577CA500F49F35 /* SearchVC.swift in Sources */,
 				94FD695D2457610A00F49F35 /* AppDelegate.swift in Sources */,
 				94FD695F2457610A00F49F35 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		94FD69622457610A00F49F35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				94FD69632457610A00F49F35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		94FD69672457610E00F49F35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leecooperapps.GitHubFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leecooperapps.GitHubFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
