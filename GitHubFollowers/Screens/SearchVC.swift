@@ -29,7 +29,8 @@ class SearchVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {     // gets called when view appears coming back from child screen(s)
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true     // don't display nav bar on this page
+        navigationController?.setNavigationBarHidden(true, animated: true)
+
     }
     
     func createDismissKeyboardTapGesture() {
