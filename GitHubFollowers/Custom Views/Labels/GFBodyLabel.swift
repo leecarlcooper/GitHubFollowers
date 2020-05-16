@@ -15,24 +15,26 @@ class GFBodyLabel: UILabel {
         configure()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     convenience init(textAlignment: NSTextAlignment) {
         self.init(frame: .zero)    // .zero defers size to auto layout
-        self.textAlignment = textAlignment
+        self.textAlignment                          = textAlignment
     }
 
-    private func configure() {
-        textColor = .secondaryLabel
-        font = UIFont.preferredFont(forTextStyle: .body)
-        adjustsFontForContentSizeCategory = true
-        adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.75
-        lineBreakMode = .byWordWrapping
-        // not setting # of lines - leave that to each use and configure there individually
-        translatesAutoresizingMaskIntoConstraints = false    // in order to use auto layout
-    }
     
+    private func configure() {
+        textColor                                   = .secondaryLabel
+        font                                        = UIFont.preferredFont(forTextStyle: .body)
+        adjustsFontForContentSizeCategory           = true
+        adjustsFontSizeToFitWidth                   = true
+        minimumScaleFactor                          = 0.75
+        lineBreakMode                               = .byWordWrapping
+        // not setting # of lines - leave that to each use and configure there individually
+        translatesAutoresizingMaskIntoConstraints   = false    // in order to use auto layout
+    }
 }

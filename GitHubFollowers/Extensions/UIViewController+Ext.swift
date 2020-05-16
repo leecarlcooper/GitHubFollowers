@@ -20,11 +20,13 @@ extension UIViewController {
         }
     }
     
+    
     func presentSafariVC(with url: URL) {
         let safariVC = SFSafariViewController(url: url)
         safariVC.preferredControlTintColor = .systemGreen
         present(safariVC, animated: true, completion: nil)
     }
+    
     
     func showEmptyStateView(with message: String, in view: UIView) {
         let emptyStateView = GFEmptyStateView(message: message)

@@ -12,6 +12,7 @@ class GFDataLoadingVC: UIViewController {
 
     var containerView: UIView!
     
+    
     func showLoadingView() {
         containerView = UIView(frame: view.bounds)
         view.addSubview(containerView)
@@ -36,11 +37,11 @@ class GFDataLoadingVC: UIViewController {
         activityIndicator.startAnimating()
     }
     
+    
     func dismissLoadingView() {
         DispatchQueue.main.async {  // put on main thread because this is called from network call completion handler
             self.containerView.removeFromSuperview()
             self.containerView = nil
         }
     }
-    
 }

@@ -9,9 +9,10 @@
 import UIKit
 
 class NetworkManager {
-    static let shared = NetworkManager()    // basics of singleton
+    
+    static let shared   = NetworkManager()    // basics of singleton
     private let baseURL = "https://api.github.com/users/"
-    let cache = NSCache<NSString, UIImage>()
+    let cache           = NSCache<NSString, UIImage>()
     
     private init() {                        // also needed for singleton
     }
@@ -55,6 +56,7 @@ class NetworkManager {
         task.resume()       // actually starts the network call
     }
     
+    
     func getUserInfo(for username: String, completed: @escaping (Result<User, GFError>) -> Void) {
         let endpoint = baseURL + "\(username)"
         
@@ -95,8 +97,8 @@ class NetworkManager {
         task.resume()       // actually starts the network call
     }
     
+    
     func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void) {
-        
         let cacheKey = NSString(string: urlString)
         
         if let image = cache.object(forKey: cacheKey) {
@@ -125,6 +127,5 @@ class NetworkManager {
         }
         
         task.resume()
-        
     }
 }

@@ -15,15 +15,18 @@ class GFSecondaryTitleLabel: UILabel {
          configure()
      }
      
+    
      required init?(coder: NSCoder) {
          fatalError("init(coder:) has not been implemented")
      }
      
+    
      convenience init(fontSize: CGFloat) {
          self.init(frame: .zero)    // .zero defers size to auto layout
         font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
      }
 
+    
      private func configure() {
          textColor = .secondaryLabel
          adjustsFontSizeToFitWidth = true
@@ -31,5 +34,4 @@ class GFSecondaryTitleLabel: UILabel {
         lineBreakMode = .byTruncatingTail
          translatesAutoresizingMaskIntoConstraints = false    // in order to use auto layout
      }
-
 }
